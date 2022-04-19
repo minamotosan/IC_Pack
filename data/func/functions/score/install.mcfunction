@@ -13,8 +13,8 @@ scoreboard objectives add flyDistance minecraft.custom:minecraft.aviate_one_cm {
 scoreboard objectives add damageTaken minecraft.custom:minecraft.damage_taken {"text": "崽种，吃我一拳","color": "red"}
 scoreboard objectives add help dummy {"text": "计 分 榜 说 明","color": "yellow"}
 
-scoreboard objectives add score_exe dummy
-scoreboard players set @a score_exe -1
+scoreboard objectives add switch_exe dummy
+scoreboard players set @a switch_exe -1
 scoreboard objectives add scoreinit dummy
 scoreboard players set @a scoreinit 0
 scoreboard players set 使用trigger控制计分榜 help 114514
