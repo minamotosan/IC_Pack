@@ -13,19 +13,7 @@ scoreboard objectives remove flyDistance
 scoreboard objectives remove damageTaken
 scoreboard objectives remove nothing
 scoreboard objectives remove help
-scoreboard objectives remove dAxeExe
-scoreboard objectives remove dAxeTemp
-scoreboard objectives remove dPickaxeExe
-scoreboard objectives remove dPickaxeTemp
-scoreboard objectives remove dShovelExe
-scoreboard objectives remove dShovelTemp
-scoreboard objectives remove nAxeExe
-scoreboard objectives remove nAxeTemp
-scoreboard objectives remove nPickaxeExe
-scoreboard objectives remove nPickaxeTemp
-scoreboard objectives remove nShovelExe
-scoreboard objectives remove nShovelTemp
-scoreboard objectives remove scoreinif
+scoreboard objectives remove scoreinit
 team remove dig
 team remove death
 team remove kill
@@ -36,3 +24,4 @@ team remove hurt
 team remove null
 team remove help
 scoreboard objectives remove scoreswitch
+scoreboard objectives remove score_exe

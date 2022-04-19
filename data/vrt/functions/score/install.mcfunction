@@ -7,25 +7,16 @@ scoreboard objectives add netherite_axe minecraft.used:minecraft.netherite_axe
 scoreboard objectives add netherite_shovel minecraft.used:minecraft.netherite_shovel
 scoreboard objectives add deathCounter deathCount {"text":"白 给 之 王","color":"white"}
 scoreboard objectives add killCounter totalKillCount {"text":"Killer Queen","color":"gray"}
-scoreboard objectives add tradingCounter minecraft.custom:minecraft.traded_with_villager {"text":"大 鸟 转 转 转","color":"green"}
-scoreboard objectives add killPlayer minecraft.custom:minecraft.player_kills {"text":"赏 金 猎 人","color": "dark_red"}
+scoreboard objectives add tradingCounter minecraft.custom:minecraft.traded_with_villager {"text":"服 不 服 排 行 榜","color":"green"}
+scoreboard objectives add killPlayer minecraft.custom:minecraft.player_kills {"text":"杀 人 狂 魔","color": "dark_red"}
 scoreboard objectives add flyDistance minecraft.custom:minecraft.aviate_one_cm {"text": "芜 湖 ， 起 飞","color": "aqua"}
 scoreboard objectives add damageTaken minecraft.custom:minecraft.damage_taken {"text": "崽种，吃我一拳","color": "red"}
 scoreboard objectives add help dummy {"text": "计 分 榜 说 明","color": "yellow"}
-scoreboard objectives add nothing dummy
-scoreboard objectives add dAxeExe dummy
-scoreboard objectives add dAxeTemp dummy
-scoreboard objectives add dPickaxeExe dummy
-scoreboard objectives add dPickaxeTemp dummy
-scoreboard objectives add dShovelExe dummy
-scoreboard objectives add dShovelTemp dummy
-scoreboard objectives add nAxeExe dummy
-scoreboard objectives add nAxeTemp dummy
-scoreboard objectives add nPickaxeExe dummy
-scoreboard objectives add nPickaxeTemp dummy
-scoreboard objectives add nShovelExe dummy
-scoreboard objectives add nShovelTemp dummy
-scoreboard objectives add scoreinif dummy
+
+scoreboard objectives add score_exe dummy
+scoreboard players set @a score_exe -1
+scoreboard objectives add scoreinit dummy
+scoreboard players set @a scoreinit 0
 scoreboard players set 使用trigger控制计分榜 help 114514
 scoreboard players set 挖掘 help 1
 scoreboard players set 死亡 help 2
@@ -54,11 +45,4 @@ team modify fly color aqua
 team modify hurt color red
 team modify help color yellow
 scoreboard objectives add scoreswitch trigger
-
-execute as @a[scores={scoreinif=0}] run scoreboard players set @s dAxeExe 0
-execute as @a[scores={scoreinif=0}] run scoreboard players set @s dPickaxeExe 0
-execute as @a[scores={scoreinif=0}] run scoreboard players set @s dShovelExe 0
-execute as @a[scores={scoreinif=0}] run scoreboard players set @s nAxeExe 0
-execute as @a[scores={scoreinif=0}] run scoreboard players set @s nPickaxeExe 0
-execute as @a[scores={scoreinif=0}] run scoreboard players set @s nShovelExe 0
-execute as @a[scores={scoreinif=0}] run scoreboard players set @s scoreinif 1
+scoreboard players enable @a scoreswitch
